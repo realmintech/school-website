@@ -4,8 +4,19 @@ import { FaBaby } from "react-icons/fa";
 import { BsFillMortarboardFill } from "react-icons/bs";
 import { FaUserGraduate } from "react-icons/fa";
 import { GiSchoolBag } from "react-icons/gi";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const ClassCategory = () => {
+   useEffect(() => {
+     AOS.init({
+       duration: 600,
+       once: false,
+       offset: 200,
+       easing: "ease-in-sine",
+     });
+   }, []);
   const data = [
     {
       title: "Creche",
@@ -34,6 +45,8 @@ const ClassCategory = () => {
       {data.map((item, index) => (
         <div
           key={index}
+          data-aos="fade-down"
+          data-aos-easing="linear"
           className="border-gray bg-white text-center  rounded-xl shadow-lg py-4 px-5"
         >
           <p className="text-lemon place-items-center text-4xl">{item.icon}</p>

@@ -1,7 +1,19 @@
 import React from "react";
 import Woman from "../../public/woman.png";
 import Image from "next/image";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const WelcomeAddress = () => {
+   useEffect(() => {
+     AOS.init({
+       duration: 600,
+       once: false,
+       offset: 200,
+       easing: "ease-in-sine",
+     });
+   }, []);
   return (
     <>
       <div className="m-7">
@@ -10,10 +22,10 @@ const WelcomeAddress = () => {
         </h1>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5 px-3">
-        <div>
+        <div data-aos="fade-left">
           <Image src={Woman} alt="Woman" priority />
         </div>
-        <div>
+        <div data-aos="fade-right">
           <h1 className="text-3xl font-medium">
             As-salam Alaykun Waramotullah Wabarakatun
           </h1>

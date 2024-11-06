@@ -4,10 +4,20 @@ import { useState } from "react";
 import Classroom from "../../public/classroom2.jpg";
 import Dinning from "../../public/dinning.jpg";
 import School from "../../public/schoolCorridor.jpg";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const PillsComponent = () => {
   const [activeTab, setActiveTab] = useState("vision");
-
+ useEffect(() => {
+   AOS.init({
+     duration: 600,
+     once: false,
+     offset: 200,
+     easing: "ease-in-sine",
+   });
+ }, []);
   const getImageForTab = (tab) => {
     switch (tab) {
       case "vision":
@@ -22,7 +32,10 @@ const PillsComponent = () => {
   };
 
   return (
-    <div className="flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-8">
+    <div
+      className="flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-8"
+      data-aos="flip-right"
+    >
       <div className="flex">
         <Image
           src={getImageForTab(activeTab)}
