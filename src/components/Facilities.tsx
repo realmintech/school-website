@@ -9,6 +9,12 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const Facilities = () => {
+  const data = [
+    { title: "Class Room", image: ClassRoom },
+    { title: "Computer Labouratory", image: ComputerLab },
+    { title: "Playing Ground", image: PlayGround },
+    { title: "Library", image: Library },
+  ];
   useEffect(() => {
     AOS.init({
       duration: 600,
@@ -21,46 +27,20 @@ const Facilities = () => {
     <>
       <h1 className="text-4xl text-center pb-6 font-bold">Our Facilities</h1>
       <div className="grid md:grid-cols-4 gap-4">
-        <div data-aos="zoom-in-up">
-          <h1 className="text-2xl font-semibold">Class Room</h1>
-          <Image
-            src={ClassRoom}
-            alt=""
-            width={450}
-            height={450}
-            className="object-cover"
-          />
-        </div>
-        <div data-aos="zoom-in-down">
-          <h1 className="text-2xl font-semibold">Library</h1>
-          <Image
-            src={Library}
-            alt=""
-            width={450}
-            height={450}
-            className="object-cover"
-          />
-        </div>
-        <div data-aos="zoom-in-up">
-          <h1 className="text-2xl font-semibold">Computer Laboratory</h1>
-          <Image
-            src={ComputerLab}
-            alt=""
-            width={450}
-            height={450}
-            className="object-cover"
-          />
-        </div>
-        <div data-aos="zoom-in-down">
-          <h1 className="text-2xl font-semibold">Playing Ground</h1>
-          <Image
-            src={PlayGround}
-            alt=""
-            width={450}
-            height={450}
-            className="object-cover"
-          />
-        </div>
+        {data.map((item, index) => (
+          <div key={index} data-aos="zoom-in-up">
+            <h1 className="text-2xl font-semibold">{item.title}</h1>
+            <div className="w-full">
+              <Image
+                src={item.image}
+                alt=""
+                width={350}
+                height={350}
+                className="object-cover rounded-lg"
+              />
+            </div>
+          </div>
+        ))}
       </div>
     </>
   );

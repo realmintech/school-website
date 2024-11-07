@@ -6,14 +6,14 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const WelcomeAddress = () => {
-   useEffect(() => {
-     AOS.init({
-       duration: 600,
-       once: false,
-       offset: 200,
-       easing: "ease-in-sine",
-     });
-   }, []);
+  useEffect(() => {
+    AOS.init({
+      duration: 600,
+      once: false,
+      offset: 200,
+      easing: "ease-in-sine",
+    });
+  }, []);
   return (
     <>
       <div className="m-7">

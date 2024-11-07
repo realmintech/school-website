@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   description: "Knowledge is power.",
 };
 
+
 export default function RootLayout({
   children,
 }: Readonly<{
