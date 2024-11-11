@@ -1,99 +1,6 @@
-"use client";
-import React, { useState, ChangeEvent, FormEvent } from "react";
+import React from "react";
 
-// Define types for form data and errors
-interface FormData {
-  fullName: string;
-  phoneNumber: string;
-  email: string;
-  subject: string;
-  message: string;
-}
-
-interface Errors {
-  fullName?: string;
-  phoneNumber?: string;
-  email?: string;
-  subject?: string;
-  message?: string;
-}
-
-const page: React.FC = () => {
-  // Set the initial form data and errors with proper types
-  const [formData, setFormData] = useState<FormData>({
-    fullName: "",
-    phoneNumber: "",
-    email: "",
-    subject: "",
-    message: "",
-  });
-
-  const [errors, setErrors] = useState<Errors>({});
-
-  // Validate form data
-  const validate = (): boolean => {
-    const newErrors: Errors = {};
-
-    if (!formData.fullName.trim()) {
-      newErrors.fullName = "Full Name is required";
-    }
-
-    if (!formData.phoneNumber.trim()) {
-      newErrors.phoneNumber = "Phone Number is required";
-    } else if (!/^\d+$/.test(formData.phoneNumber)) {
-      newErrors.phoneNumber = "Phone Number must contain only numbers";
-    }
-
-    if (!formData.email.trim()) {
-      newErrors.email = "Email is required";
-    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
-      newErrors.email = "Email is invalid";
-    }
-
-    if (!formData.subject.trim()) {
-      newErrors.subject = "Subject is required";
-    }
-
-    if (!formData.message.trim()) {
-      newErrors.message = "Message is required";
-    }
-
-    setErrors(newErrors);
-    return Object.keys(newErrors).length === 0;
-  };
-
-  // Handle input changes
-  const handleChange = (
-    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  // Handle form submission
-  const handleSubmit = async (e: FormEvent) => {
-    e.preventDefault();
-    if (!validate()) return;
-
-    const response = await fetch("/api/send-email", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(formData),
-    });
-
-    if (response.ok) {
-      alert("Email sent successfully");
-      setFormData({
-        fullName: "",
-        phoneNumber: "",
-        email: "",
-        subject: "",
-        message: "",
-      });
-    } else {
-      alert("Error sending email");
-    }
-  };
-
+const page = () => {
   return (
     <>
       <div className="m-10">
@@ -115,8 +22,8 @@ const page: React.FC = () => {
                 Al-hikmoh Primary School, Halleluyah Estate
               </h1>
               <p className="">
-                Behind Onward Hospital, Halleluyah, <br /> Agunbelewo Area,
-                Osogbo, Osun State.
+                Behind Onward Hospital, Halleluyah,
+                <br /> Agunbelewo Area, Osogbo, Osun State.
               </p>
             </div>
             <div>
@@ -124,8 +31,8 @@ const page: React.FC = () => {
                 Al-hikmoh Secondary School, Agunbelewo
               </h1>
               <p className="">
-                Behind Onward Hospital, Halleluyah, <br /> Agunbelewo Area,
-                Osogbo, Osun State.
+                Behind Onward Hospital, Halleluyah,
+                <br /> Agunbelewo Area, Osogbo, Osun State.
               </p>
             </div>
           </div>
@@ -140,79 +47,38 @@ const page: React.FC = () => {
             ></iframe>
           </div>
           <div className="mt-10">
-            <form onSubmit={handleSubmit}>
+            <form action="">
               <h1 className="text-3xl font-medium text-center mb-5">
                 Please fill out the form below and we will be in touch with you.
               </h1>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div>
-                  <input
-                    type="text"
-                    name="fullName"
-                    value={formData.fullName}
-                    onChange={handleChange}
-                    className="p-3 outline-lemon w-full shadow-md rounded-lg"
-                    placeholder="Full Name"
-                  />
-                  {errors.fullName && (
-                    <p className="text-red-500">{errors.fullName}</p>
-                  )}
-                </div>
-                <div>
-                  <input
-                    type="text"
-                    name="phoneNumber"
-                    value={formData.phoneNumber}
-                    onChange={handleChange}
-                    className="p-3 outline-lemon w-full shadow-md rounded-lg"
-                    placeholder="Phone Number"
-                  />
-                  {errors.phoneNumber && (
-                    <p className="text-red-500">{errors.phoneNumber}</p>
-                  )}
-                </div>
-                <div>
-                  <input
-                    type="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    className="p-3 outline-lemon w-full shadow-md rounded-lg"
-                    placeholder="Email"
-                  />
-                  {errors.email && (
-                    <p className="text-red-500">{errors.email}</p>
-                  )}
-                </div>
-                <div>
-                  <input
-                    type="text"
-                    name="subject"
-                    value={formData.subject}
-                    onChange={handleChange}
-                    className="p-3 outline-lemon w-full shadow-md rounded-lg"
-                    placeholder="Subject"
-                  />
-                  {errors.subject && (
-                    <p className="text-red-500">{errors.subject}</p>
-                  )}
-                </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 ">
+                <input
+                  type="text"
+                  className="p-3  outline-lemon shadow-md rounded-lg"
+                  placeholder="Full Name"
+                />
+                <input
+                  type="text"
+                  className="p-3  outline-lemon shadow-md rounded-lg"
+                  placeholder="Phone Number"
+                />
+                <input
+                  type="text"
+                  className="p-3  outline-lemon shadow-md rounded-lg"
+                  placeholder="Email"
+                />
+                <input
+                  type="text"
+                  className="p-3  outline-lemon shadow-md rounded-lg"
+                  placeholder="Subject"
+                />
               </div>
-              <div>
-                <textarea
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  className="w-full my-4 h-[200px] outline-lemon shadow-md rounded-lg"
-                  placeholder="Message"
-                ></textarea>
-                {errors.message && (
-                  <p className="text-red-500">{errors.message}</p>
-                )}
-              </div>
-              <button type="submit" className="bg-lemon text-white p-3 w-full">
-                SUBMIT
-              </button>
+              <textarea
+                name=""
+                id=""
+                className="w-full mt-4 h-[200px]  outline-lemon shadow-md rounded-lg"
+              ></textarea>
+              <button type="submit" className="bg-lemon text-white p-3 w-full">SUBMIT</button>
             </form>
           </div>
         </div>
