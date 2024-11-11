@@ -151,7 +151,7 @@ const page: React.FC = () => {
                     name="fullName"
                     value={formData.fullName}
                     onChange={handleChange}
-                    className="p-3 outline-lemon shadow-md rounded-lg"
+                    className="p-3 outline-lemon w-full shadow-md rounded-lg"
                     placeholder="Full Name"
                   />
                   {errors.fullName && (
@@ -164,7 +164,7 @@ const page: React.FC = () => {
                     name="phoneNumber"
                     value={formData.phoneNumber}
                     onChange={handleChange}
-                    className="p-3 outline-lemon shadow-md rounded-lg"
+                    className="p-3 outline-lemon w-full shadow-md rounded-lg"
                     placeholder="Phone Number"
                   />
                   {errors.phoneNumber && (
@@ -177,7 +177,7 @@ const page: React.FC = () => {
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
-                    className="p-3 outline-lemon shadow-md rounded-lg"
+                    className="p-3 outline-lemon w-full shadow-md rounded-lg"
                     placeholder="Email"
                   />
                   {errors.email && (
@@ -190,7 +190,7 @@ const page: React.FC = () => {
                     name="subject"
                     value={formData.subject}
                     onChange={handleChange}
-                    className="p-3 outline-lemon shadow-md rounded-lg"
+                    className="p-3 outline-lemon w-full shadow-md rounded-lg"
                     placeholder="Subject"
                   />
                   {errors.subject && (

@@ -48,7 +48,7 @@ const Footer = () => {
             <FaPhone className="text-2xl" />
           </div>
           <div className="md:text-left">
-            <p className="text-2xl top-0">09063583756</p>
+            <p>09063583756</p>
             <h3>AL_HIKMOH MONTESSORI ACADEMY</h3>
             <h5>
               Behind Onward Hospital, Halleluyah,
