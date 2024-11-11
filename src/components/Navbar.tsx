@@ -19,7 +19,7 @@ const Navbar: React.FC = () => {
         <i className="mt-2">
           <FaEnvelope />
         </i>
-        <span className="px-1 mt-1">Al-hikmoh@gmail.com</span>
+        <span className="px-1 mt-1">Al-hikmohmontessoriacademy@gmail.com</span>
       </div>
       <nav className="bg-white shadow-lg sticky top-0 z-20">
         <div className="container mx-auto flex justify-between items-center md:px-4 lg:px-8">
