@@ -34,8 +34,7 @@ const Facilities = () => {
               <Image
                 src={item.image}
                 alt=""
-                width={350}
-                height={350}
+                style={{height: '250px', width: '100%'}}
                 className="object-cover rounded-lg"
               />
             </div>
