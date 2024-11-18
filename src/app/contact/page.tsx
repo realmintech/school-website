@@ -5,10 +5,10 @@ const page = () => {
     <>
       <div className="m-10">
         <div className="my-3">
-          <h1 className="text-4xl font-bold text-center underline">
+          <h1 className="text-4xl font-bold text-center underline my-10">
             GET IN TOUCH
           </h1>
-          <p className="text-center">
+          <p className="text-center my-10">
             Welcome to our Contact page! Get in touch with us effortlessly. Find
             the phone numbers for each school branch and a dedicated email for
             all branches. We're here to assist you promptly and warmly welcome
@@ -16,8 +16,8 @@ const page = () => {
           </p>
         </div>
         <div>
-          <div className="grid grid-cols-1 md:grid-cols-2 my-4">
-            <div>
+          <div className="grid grid-cols-1 md:grid-cols-2 my-8">
+            <div className="my-2">
               <h1 className="text-3xl font-medium">
                 Al-hikmoh Primary School, Halleluyah Estate
               </h1>
@@ -26,7 +26,7 @@ const page = () => {
                 <br /> Agunbelewo Area, Osogbo, Osun State.
               </p>
             </div>
-            <div>
+            <div className="my-2">
               <h1 className="text-3xl font-medium">
                 Al-hikmoh Secondary School, Agunbelewo
               </h1>
@@ -78,7 +78,12 @@ const page = () => {
                 id=""
                 className="w-full mt-4 h-[200px]  outline-lemon shadow-md rounded-lg"
               ></textarea>
-              <button type="submit" className="bg-lemon text-white p-3 w-full">SUBMIT</button>
+              <button
+                type="submit"
+                className="bg-lemon shadow-md rounded-lg text-white  p-3 w-full"
+              >
+                SUBMIT
+              </button>
             </form>
           </div>
         </div>

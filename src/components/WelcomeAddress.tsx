@@ -23,7 +23,12 @@ const WelcomeAddress = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5 px-3">
         <div data-aos="fade-left">
-          <Image src={Woman} alt="Woman" priority />
+          <Image
+            src={Woman}
+            alt="Woman"
+            className="w-[100%] h-[350px]"
+            priority
+          />
         </div>
         <div data-aos="fade-right">
           <h1 className="text-3xl font-medium">
