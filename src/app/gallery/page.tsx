@@ -12,6 +12,11 @@ import AboutHero from "@/components/AboutHero";
 
 const Gallery: React.FC = () => {
   const data = [
+    { img: Wear },
+    { img: Fruit },
+    { img: Library },
+    { img: Field },
+    { img: Classroom },
     { img: Fruit },
     { img: Computer },
     { img: Sport },
@@ -24,6 +29,11 @@ const Gallery: React.FC = () => {
     { img: Computer },
     { img: Sport },
     { img: Wear },
+    { img: Wear },
+    { img: Fruit },
+    { img: Library },
+    { img: Field },
+    { img: Classroom },
   ];
   return (
     <>
@@ -37,13 +47,13 @@ const Gallery: React.FC = () => {
           heading: "custom-heading-class",
         }}
       />
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 m-10">
+      <div className="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-8 gap-3 m-10">
         {data.map((item, index) => (
           <div key={index}>
             <Image
               src={item.img}
               alt="Gallery image"
-              className=" rounded-md shadow-md"
+              className="rounded-md shadow-md w-36 h-36 border-4 border-lemon mb-8 align-middle"
               priority
             />
           </div>
