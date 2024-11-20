@@ -30,12 +30,6 @@ const Navbar: React.FC = () => {
               alt="School Logo"
               className="w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20"
             />
-            {/* <Link
-              href="/"
-              className="text-2xl sm:text-3xl lg:text-4xl font-bold text-lemon"
-            >
-              Al-hikmoh
-            </Link> */}
           </div>
 
           <div
@@ -61,7 +55,7 @@ const Navbar: React.FC = () => {
               { href: "/about", label: "About" },
               { href: "/news", label: "News/Event" },
               { href: "/gallery", label: "Gallery" },
-              { href: "/services", label: "Services" },
+              { href: "/admission", label: "Admission" },
               { href: "/contact", label: "Contact" },
               { href: "/portal", label: "Learner's portal" },
             ].map((item) => (

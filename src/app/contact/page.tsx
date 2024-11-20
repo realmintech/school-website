@@ -1,8 +1,20 @@
+import AboutHero from "@/components/AboutHero";
+import Computer from '../../../public/computerLab.jpg'
 import React from "react";
 
-const page = () => {
+const page: React.FC = () => {
   return (
     <>
+        <AboutHero
+          imageSrc={Computer}
+          altText="Computer"
+          headingText="Contact Us"
+          styles={{
+            container: "custom-container-class",
+            image: "custom-image-class",
+            heading: "custom-heading-class",
+          }}
+        />
       <div className="m-10">
         <div className="my-3">
           <h1 className="text-4xl font-bold text-center underline my-10">

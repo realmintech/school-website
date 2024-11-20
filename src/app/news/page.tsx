@@ -4,9 +4,10 @@ import Sport from '../../../public/sportWear.jpg'
 import Wear from '../../../public/children.jpg'
 import Computer from '../../../public/computerLab.jpg'
 import Image from "next/image";
+import AboutHero from "@/components/AboutHero";
 
 
-const News = () => {
+const News: React.FC = () => {
   const data = [
     {
       title: "Fruit Week",
@@ -51,12 +52,27 @@ const News = () => {
   ];
   return (
     <>
+      <AboutHero
+        imageSrc={Wear}
+        altText="News and Event"
+        headingText="News/Event"
+        styles={{
+          container: "custom-container-class",
+          image: "custom-image-class",
+          heading: "custom-heading-class",
+        }}
+      />
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 m-10">
-        {data.map((item,index)=>(
+        {data.map((item, index) => (
           <div key={index}>
-              <Image src={item.img} alt="Image" className="w-[100%] h-[250px] rounded-md shadow-md" priority />
-              <h1 className="text-3xl font-medium mt-2">{item.title}</h1>
-              <p>{item.desc}</p>
+            <Image
+              src={item.img}
+              alt="Image"
+              className="w-[100%] h-[250px] rounded-md shadow-md"
+              priority
+            />
+            <h1 className="text-3xl font-medium mt-2">{item.title}</h1>
+            <p>{item.desc}</p>
           </div>
         ))}
       </div>
