@@ -7,7 +7,7 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-2 mx-auto justify-evenly items-center container-fluid bg-lemon text-white">
+      <div className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-4 gap-2 mx-auto justify-evenly items-center container-fluid bg-lemon text-white">
         <div className="text-center">
           <div>
             <Image
@@ -55,6 +55,14 @@ const Footer = () => {
               <br /> Agunbelewo Area, Osogbo, Osun State.
             </h5>
           </div>
+        </div>
+        <div className="text-center md:text-left">
+          <h3 className="text-2xl">The Al-hikmoh Academy</h3>
+          <p>
+            We are committed to raising God fearing Leaders who would aim for
+            excellence in all their endeavor. We are committed to raising God
+            fearing Leaders who would aim for excellence in all their endeavor.
+          </p>
         </div>
       </div>
     </>
