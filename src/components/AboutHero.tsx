@@ -2,13 +2,13 @@ import React from "react";
 import Image, { StaticImageData } from "next/image";
 
 interface AboutHeroProps {
-  imageSrc: string | StaticImageData; 
-  altText: string; 
-  headingText: string; 
+  imageSrc: string | StaticImageData;
+  altText: string;
+  headingText: string;
   styles?: {
-    container?: string; 
-    image?: string; 
-    heading?: string; 
+    container?: string;
+    image?: string;
+    heading?: string;
   };
 }
 
@@ -29,9 +29,12 @@ const AboutHero: React.FC<AboutHeroProps> = ({
         fill={true}
         className={`object-cover ${styles.image}`}
       />
-      <div className="absolute inset-0">
+
+      <div className="absolute inset-0 bg-gradient-to-b from-lemon-70 via-white-30 to-transparent"></div>
+
+      <div className="absolute inset-0 flex justify-center items-center">
         <div
-          className={`text-center text-5xl font-bold mx-auto mt-14 md:mt-16 lg:mt-60 text-white ${styles.heading}`}
+          className={`text-center text-5xl font-bold text-white ${styles.heading}`}
         >
           {headingText}
         </div>
