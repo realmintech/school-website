@@ -14,7 +14,6 @@ const Footer = () => {
           className="w-full max-w-xs h-auto mx-auto object-cover"
         />
       </div>
-
       <div className="text-center md:text-left mt-14">
         <ul>
           <li>
