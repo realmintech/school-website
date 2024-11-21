@@ -57,7 +57,7 @@ const Navbar: React.FC = () => {
               { href: "/gallery", label: "Gallery" },
               { href: "/admission", label: "Admission" },
               { href: "/contact", label: "Contact" },
-              { href: "/portal", label: "Learner's portal" },
+              // { href: "/portal", label: "Learner's portal" },
             ].map((item) => (
               <li
                 key={item.href}

@@ -29,11 +29,9 @@ const AboutHero: React.FC<AboutHeroProps> = ({
         fill={true}
         className={`object-cover ${styles.image}`}
       />
-
-      <div className="absolute inset-0 bg-gradient-to-b from-lemon-70 via-white-30 to-transparent"></div>
-
+      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/20 to-black/60"></div>
       <div className="absolute inset-0 flex justify-center items-center">
-        <div
+        <div  
           className={`text-center text-5xl font-bold text-white ${styles.heading}`}
         >
           {headingText}

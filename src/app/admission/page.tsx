@@ -1,4 +1,4 @@
-import AdmissionCard from '@/components/admissionCard'
+import AdmissionCard from '@/components/AdmissionCard'
 import AdmissionDetails from '@/components/AdmissionDetails'
 import Admission from '@/components/AdmissionHero'
 import React from 'react'
