@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 px-10 pb-10 gap-6 mx-auto justify-evenly items-start container-fluid bg-lemon text-white">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 px-10 gap-6 mx-auto justify-evenly items-start container-fluid bg-lemon text-white">
       <div className="text-center">
         <Image
           src={Logo}
@@ -14,7 +14,7 @@ const Footer = () => {
           className="w-full max-w-xs h-auto mx-auto object-cover"
         />
       </div>
-      <div className="text-center md:text-left mt-14">
+      <div className="text-center md:text-left lg:mt-14">
         <ul>
           <li>
             <Link href="/">Home</Link>
@@ -36,7 +36,6 @@ const Footer = () => {
           </li>
         </ul>
       </div>
-
       <div className="text-center md:text-left mt-14">
         <h3 className="text-2xl">Connect With Us</h3>
         <div className="flex gap-4 my-2 justify-center md:justify-start">
@@ -54,7 +53,6 @@ const Footer = () => {
           </h5>
         </div>
       </div>
-
       <div className="text-center md:text-left mt-14">
         <h3 className="text-2xl">The Al-hikmoh Academy</h3>
         <p>
