@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 import Computer from "../../public/computerLab.jpg";
 import AboutHero from "./AboutHero";

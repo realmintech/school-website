@@ -58,12 +58,12 @@ const page: React.FC = () => {
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
-          <div className="mt-10">
+          <div className="mt-10 ">
             <form action="">
               <h1 className="text-3xl font-medium text-center mb-5">
                 Please fill out the form below and we will be in touch with you.
               </h1>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 ">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <input
                   type="text"
                   className="p-3  outline-lemon shadow-md rounded-lg"
@@ -88,6 +88,7 @@ const page: React.FC = () => {
               <textarea
                 name=""
                 id=""
+                placeholder="Leave a Message"
                 className="w-full mt-4 h-[200px]  outline-lemon shadow-md rounded-lg"
               ></textarea>
               <button

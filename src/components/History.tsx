@@ -91,8 +91,8 @@ const History = () => {
               index === 0 || index === 2 ? "bg-lemon text-white" : ""
             }`}
           >
-            <h1 className="text-4xl font-bold">{item.title}</h1>
-            <p>{item.desc}</p>
+            <h1 className="text-5xl font-bold">{item.title}</h1>
+            <p className="text-xl">{item.desc}</p>
           </div>
         ))}
       </div>

@@ -1,6 +1,6 @@
 import AboutHero from "@/components/AboutHero";
 import History from "@/components/History";
-import School from "../../../public/schoolCorridor.jpg";
+import School from "../../../public/assests/sch2.jpg";
 import React from "react";
 
 const page: React.FC = () => {

@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import PlayGround from "../../public/playGround.jpg";
 import ComputerLab from "../../public/computerLab.jpg";
-import ClassRoom from "../../public/classroom2.jpg";
+import ClassRoom from "../../public/assests/sch6.jpg";
 import Library from "../../public/schoolCorridor.jpg";
 import { useEffect } from "react";
 import AOS from "aos";
@@ -26,14 +26,14 @@ const Facilities = () => {
   return (
     <>
       <h1 className="text-4xl text-center pb-6 font-bold">Our Facilities</h1>
-      <div className="grid md:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
         {data.map((item, index) => (
           <div key={index} data-aos="zoom-in-up">
             <h1 className="text-2xl font-semibold">{item.title}</h1>
             <div className="w-full">
               <Image
                 src={item.image}
-                alt=""
+                alt="facilities"
                 style={{height: '250px', width: '100%'}}
                 className="object-cover rounded-lg"
               />
