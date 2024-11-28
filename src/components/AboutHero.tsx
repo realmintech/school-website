@@ -20,7 +20,7 @@ const AboutHero: React.FC<AboutHeroProps> = ({
 }) => {
   return (
     <div
-      className={`relative w-full h-60 lg:h-[550px] md:h-40 overflow-hidden ${styles.container}`}
+      className={`relative w-full h-60 lg:h-[550px] md:h-80 overflow-hidden ${styles.container}`}
     >
       <Image
         src={imageSrc}
@@ -31,7 +31,7 @@ const AboutHero: React.FC<AboutHeroProps> = ({
       />
       <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/20 to-black/60"></div>
       <div className="absolute inset-0 flex justify-center items-center">
-        <div  
+        <div
           className={`text-center text-5xl font-bold text-white ${styles.heading}`}
         >
           {headingText}

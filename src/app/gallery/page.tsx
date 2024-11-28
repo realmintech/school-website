@@ -2,14 +2,14 @@
 import React, { useState } from "react";
 import Image, { StaticImageData } from "next/image";
 import Modal from "react-modal";
-import Fruit from "../../../public/fruit.jpg";
-import Sport from "../../../public/sportWear.jpg";
-import Wear from "../../../public/children.jpg";
-import Computer from "../../../public/computerLab.jpg";
-import Library from "../../../public/dinning.jpg";
-import Classroom from "../../../public/classroom.jpg";
-import Playground from "../../../public/playGround.jpg";
-import Field from "../../../public/dinning.jpg";
+import Fruit from "../../../public/assests/sch1.jpg";
+import Sport from "../../../public/assests/sch5.jpg";
+import Wear from "../../../public/assests/sch2.jpg";
+import Computer from "../../../public/assests/sch6.jpg";
+import Library from "../../../public/assests/sch3.jpg";
+import Classroom from "../../../public/assests/sch8.jpg";
+import Playground from "../../../public/assests/sch4.jpg";
+import Field from "../../../public/assests/sch7.jpg";
 import AboutHero from "@/components/AboutHero";
 
 interface GalleryItem {
