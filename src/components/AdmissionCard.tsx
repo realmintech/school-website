@@ -61,7 +61,7 @@ const AdmissionCard = () => {
       {data.map((item, index: number) => (
         <div
           key={index}
-          className={`grid grid-cols-1 md:grid-cols-2 gap-5 p-10 mt-5 ${
+          className={`grid grid-cols-1 md:grid-cols-2 gap-5 px-10 py-40 mt-5 ${
             index === 0 || index === 2 ? "bg-lemon text-white" : ""
           }`}
         >
