@@ -73,7 +73,7 @@ const Gallery: React.FC = () => {
           heading: "custom-heading-class",
         }}
       />
-      <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-3 m-10">
+      <div className="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-10 m-10 gap-3">
         {datas.map((item, index) => (
           <div
             key={index}
@@ -83,7 +83,7 @@ const Gallery: React.FC = () => {
             <Image
               src={item.img}
               alt={`Gallery image ${index + 1}`}
-              className="w-40 h-36 border-4 border-lemon mb-8 align-middle"
+              className="w-28 h-28 border-2 border-lemon mb-8 align-middle"
               priority
             />
           </div>

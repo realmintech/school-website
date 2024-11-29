@@ -5,22 +5,22 @@ import React from "react";
 const page: React.FC = () => {
   return (
     <>
-        <AboutHero
-          imageSrc={Computer}
-          altText="Computer"
-          headingText="Contact Us"
-          styles={{
-            container: "custom-container-class",
-            image: "custom-image-class",
-            heading: "custom-heading-class",
-          }}
-        />
+      <AboutHero
+        imageSrc={Computer}
+        altText="Computer"
+        headingText="Contact Us"
+        styles={{
+          container: "custom-container-class",
+          image: "custom-image-class",
+          heading: "custom-heading-class",
+        }}
+      />
       <div className="m-10">
         <div className="my-3">
-          <h1 className="text-4xl font-bold text-center underline my-10">
+          <h1 className="text-4xl font-bold text-center underline my-32">
             GET IN TOUCH
           </h1>
-          <p className="text-center my-10">
+          <p className="text-center my-20 text-sm tracking-wide leading-snug ">
             Welcome to our Contact page! Get in touch with us effortlessly. Find
             the phone numbers for each school branch and a dedicated email for
             all branches. We're here to assist you promptly and warmly welcome
@@ -30,19 +30,19 @@ const page: React.FC = () => {
         <div>
           <div className="grid grid-cols-1 md:grid-cols-2 my-8">
             <div className="my-2">
-              <h1 className="text-3xl font-medium">
+              <h1 className="text-2xl mb-1 font-medium tracking-tight leading-snug">
                 Al-hikmoh Primary School, Halleluyah Estate
               </h1>
-              <p className="">
+              <p className="text-sm tracking-wide leading-snug">
                 Behind Onward Hospital, Halleluyah,
                 <br /> Agunbelewo Area, Osogbo, Osun State.
               </p>
             </div>
             <div className="my-2">
-              <h1 className="text-3xl font-medium">
+              <h1 className="text-2xl mb-1 font-medium tracking-tight leading-snug">
                 Al-hikmoh Secondary School, Agunbelewo
               </h1>
-              <p className="">
+              <p className="text-sm tracking-wide leading-snug">
                 Behind Onward Hospital, Halleluyah,
                 <br /> Agunbelewo Area, Osogbo, Osun State.
               </p>
@@ -66,22 +66,22 @@ const page: React.FC = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <input
                   type="text"
-                  className="p-3  outline-lemon shadow-md rounded-lg"
+                  className="p-3 my-1 outline-lemon shadow-md rounded-lg"
                   placeholder="Full Name"
                 />
                 <input
                   type="text"
-                  className="p-3  outline-lemon shadow-md rounded-lg"
+                  className="p-3 my-1 outline-lemon shadow-md rounded-lg"
                   placeholder="Phone Number"
                 />
                 <input
                   type="text"
-                  className="p-3  outline-lemon shadow-md rounded-lg"
+                  className="p-3 my-1 outline-lemon shadow-md rounded-lg"
                   placeholder="Email"
                 />
                 <input
                   type="text"
-                  className="p-3  outline-lemon shadow-md rounded-lg"
+                  className="p-3 my-1 outline-lemon shadow-md rounded-lg"
                   placeholder="Subject"
                 />
               </div>
@@ -89,11 +89,11 @@ const page: React.FC = () => {
                 name=""
                 id=""
                 placeholder="Leave a Message"
-                className="w-full mt-4 h-[200px]  outline-lemon shadow-md rounded-lg"
+                className="w-full p-3 mt-4 h-[200px]  outline-lemon shadow-md rounded-lg"
               ></textarea>
               <button
                 type="submit"
-                className="bg-lemon shadow-md rounded-lg text-white  p-3 w-full"
+                className="bg-lemon mt-2 shadow-md rounded-lg text-white  p-3 w-full"
               >
                 SUBMIT
               </button>

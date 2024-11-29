@@ -57,8 +57,8 @@ const History = () => {
   return (
     <>
       <div className="m-10">
-        <h1 className="text-center text-3xl font-medium">Our Story</h1>
-        <h3 className="text-center text-2xl font-medium">
+        <h1 className="text-center text-4xl font-bold underline my-36">Our Story</h1>
+        <h3 className="text-center text-xl font-medium leading-relaxed tracking-wide">
           It all started with a deep commitment to creating a supportive
           environment that would provide her son with the best private home
           education.
@@ -66,13 +66,17 @@ const History = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5 m-10">
         <div>
-          <h1 className="text-4xl font-bold mb-5">AL-HIKMOH MONTESSORI ACADEMY</h1>
-          <p>The school was established in 2020.</p>
+          <h1 className="text-4xl font-bold mb-5">
+            AL-HIKMOH MONTESSORI ACADEMY
+          </h1>
+          <p className="text-sm leading-relaxed tracking-wide">
+            The school was established in 2020.
+          </p>
           <Image src={School} alt="School" className="w-full" />
         </div>
         <div>
           <h1 className="text-4xl font-bold mb-5">FOUNDER'S NOTE</h1>
-          <p>
+          <p className="text-sm leading-relaxed tracking-wide">
             On July 23rd, 2020, Al-hikmoh Montessori Academy officially welcomes
             5 pupils to the school. With Mrs AbdulRaafi as the head teacher and
             Mrs as the admin officer. The proprietress and her team had a goal
@@ -83,16 +87,16 @@ const History = () => {
         </div>
       </div>
       <div>
-        <h1 className="text-center text-4xl font-bold">CODES & POLICY</h1>
+        <h1 className="text-center text-4xl font-bold my-20">CODES & POLICY</h1>
         {data.map((item, index: number) => (
           <div
             key={index}
-            className={`grid grid-cols-1 md:grid-cols-2 gap-5 p-10 mt-5 ${
+            className={`grid grid-cols-1 md:grid-cols-2 gap-5 items-center p-10 mt-5 ${
               index === 0 || index === 2 ? "bg-lemon text-white" : ""
             }`}
           >
-            <h1 className="text-5xl font-bold">{item.title}</h1>
-            <p className="text-xl">{item.desc}</p>
+            <h1 className="text-5xl font-bold align-middle">{item.title}</h1>
+            <p className="text-sm leading-relaxed tracking-wide">{item.desc}</p>
           </div>
         ))}
       </div>
@@ -100,7 +104,7 @@ const History = () => {
         <h1 className="text-center text-4xl font-bold mb-5">
           ACCREDITATIONS & AFFLIATIONS
         </h1>
-        <p className="text-justify ">
+        <p className="text-justify text-sm leading-relaxed tracking-wide">
           Al-hikmoh Montessori Academy holds official recognition as an esteemed
           educational institution in Nigeria, duly approved by both the Federal
           Government of Nigeria and the Osun State Ministry of Education.

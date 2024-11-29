@@ -47,7 +47,7 @@ const PillsComponent = () => {
       </div>
 
       <div className="flex flex-col w-full md:w-1/2 space-y-4">
-        <ul className="flex flex-wrap justify-center md:justify-start space-x-2 md:space-x-4 mb-4">
+        <ul className="flex flex-wrap justify-center md:justify-start space-x-2 md:space-x-4">
           {["vision", "mission", "value"].map((tab) => (
             <li key={tab} className="w-full sm:w-auto">
               <button
@@ -73,19 +73,19 @@ const PillsComponent = () => {
           className="p-6 bg-gray-100 rounded-lg"
         >
           {activeTab === "vision" && (
-            <p>
+            <p className="text-sm leading-relaxed tracking-wide">
               Vision content goes here. Lorem ipsum dolor sit amet, consectetur
               adipisicing elit.
             </p>
           )}
           {activeTab === "mission" && (
-            <p>
+            <p className="text-sm leading-relaxed tracking-wide">
               Mission content goes here. Fuga nam perspiciatis laudantium autem
               eveniet nesciunt velit!
             </p>
           )}
           {activeTab === "value" && (
-            <p>
+            <p className="text-sm leading-relaxed tracking-wide">
               Value content goes here. Lorem ipsum, dolor sit amet consectetur
               adipisicing elit.
             </p>

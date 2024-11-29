@@ -17,24 +17,23 @@ const WelcomeAddress = () => {
   return (
     <>
       <div className="m-10">
-        <h1 className="text-4xl font-bold text-center mb-10">
+        <h1 className="text-4xl font-bold text-center mt-32 mb-10">
           Welcome Address By The Proprietress
         </h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5 px-3">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5 px-3 items-center">
           <div data-aos="fade-left">
             <Image
               src={Woman}
               alt="Woman"
-              className="items-center rounded-lg shadow-lg mt-2 object-cover w-[100%] h-[350px]"
+              className="align-middle inline-block rounded-lg shadow-lg mt-2 object-cover w-[100%] h-[350px]"
               priority
             />
           </div>
           <div data-aos="fade-right">
-            <h1 className="text-3xl font-medium">
+            <h1 className="text-2xl mb-1 font-medium tracking-tight leading-snug">
               As-salam Alaykun Waramotullah Wabarakatun
             </h1>
-            <p>In the name of Allah the beneficient, the most merciful.</p>
-            <p>
+            <p className="text-sm leading-relaxed tracking-wide text-justify">
               In 2020, when I and curriculum’s team started to make an Al-hikmoh
               Montessori Academy curriculum which mix between Montessori and
               Islamic value, I have a dream that Al-hikmoh Montessori Academy

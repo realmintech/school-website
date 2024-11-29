@@ -71,8 +71,8 @@ const News: React.FC = () => {
               className="w-[100%] h-[250px] rounded-md shadow-md"
               priority
             />
-            <h1 className="text-3xl font-medium mt-2">{item.title}</h1>
-            <p>{item.desc}</p>
+            <h1 className="text-2xl font-bold mt-2">{item.title}</h1>
+            <p className="text-sm tracking-wide leading-snug">{item.desc}</p>
           </div>
         ))}
       </div>

@@ -40,7 +40,7 @@ const AdmissionCard = () => {
           </div>
         ))}
       </div>
-      <div className="m-10">
+      <div className="m-10 text-sm tracking-wide leading-snug">
         <p>
           Al-hikmoh Montessori Academy admits children based on specific age
           groups. For crèche, we accept children between 3 and 11 months. For
@@ -67,11 +67,15 @@ const AdmissionCard = () => {
         >
           <div>
             <h1 className="text-4xl font-bold">{item.step}</h1>
-            <h1 className="text-3xl font-bold">{item.desc}</h1>
+            <h1 className="text-3xl font-bold tracking-wide leading-snug">
+              {item.desc}
+            </h1>
           </div>
           <div>
             <p className="text-2xl font-bold">{item.instruction}</p>
-            <p>{item.statement}</p>
+            <p className="text-sm tracking-wide leading-snug ">
+              {item.statement}
+            </p>
           </div>
         </div>
       ))}

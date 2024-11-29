@@ -4,13 +4,13 @@ const AdmissionDetails = () => {
   return (
     <>
       <div>
-        <h1 className="text-center text-4xl font-bold mt-10">Welcoming Children To Our School</h1>
-        <div className='grid grid-cols-1 md:grid-cols-2 m-10 gap-3'>
+        <h1 className="text-center text-4xl font-bold my-36">Welcoming Children To Our School</h1>
+        <div className='grid grid-cols-1 md:grid-cols-2 mx-10 gap-3 my-14'>
           <div>
             <h1 className='text-4xl font-medium'>Al-hikmoh Montessori Academy Registration</h1>
           </div>
           <div>
-            <p>
+            <p className='text-sm tracking-wide leading-snug'>
               To make the admission process more convenient for our families,
               parents can now complete their child's admission form online.
               Please be aware that a registration fee is required to secure an

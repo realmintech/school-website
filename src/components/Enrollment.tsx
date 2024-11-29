@@ -17,10 +17,10 @@ const Enrollment = () => {
     <>
       <div className="grid grid-cols-1 md:grid-cols-2" data-aos="fade-right">
         <div>
-          <h1 className="text-4xl font-bold">
+          <h1 className="text-3xl md:text-4xl font-bold ">
             Registration & <br /> Enrollment Ongoing...
           </h1>
-          <p className="my-3">
+          <p className="my-3 text-sm leading-relaxed tracking-wide">
             You can still enrol your child or ward into our Creche,
             Kindergerteen, Nursery, Primary and Secondary schools. Click the
             link below to fill the online registration form or download an
