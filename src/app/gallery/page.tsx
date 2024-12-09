@@ -12,6 +12,7 @@ import Playground from "../../../public/assests/sch4.jpg";
 import Field from "../../../public/assests/sch7.jpg";
 import AboutHero from "@/components/AboutHero";
 
+
 interface GalleryItem {
   img: StaticImageData;
 }
@@ -73,7 +74,7 @@ const Gallery: React.FC = () => {
           heading: "custom-heading-class",
         }}
       />
-      <div className="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-10 m-10 gap-3">
+      <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-7 m-10 gap-2">
         {datas.map((item, index) => (
           <div
             key={index}
@@ -83,7 +84,7 @@ const Gallery: React.FC = () => {
             <Image
               src={item.img}
               alt={`Gallery image ${index + 1}`}
-              className="w-28 h-28 border-2 border-lemon mb-8 align-middle"
+              className="w-full h-28 border-1 border-white mb-8 object-cover rounded-xl shadow-lg"
               priority
             />
           </div>

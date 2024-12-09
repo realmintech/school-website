@@ -3,6 +3,9 @@ import History from "@/components/History";
 import School from "../../../public/assests/sch2.jpg";
 import React from "react";
 
+export const metadata = {
+  title: "About page",
+};
 const page: React.FC = () => {
   return (
     <>

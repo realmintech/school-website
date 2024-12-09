@@ -1,6 +1,11 @@
 import AboutHero from "@/components/AboutHero";
 import Computer from '../../../public/computerLab.jpg'
 import React from "react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact page",
+};
 
 const page: React.FC = () => {
   return (

@@ -6,6 +6,9 @@ import Computer from '../../../public/computerLab.jpg'
 import Image from "next/image";
 import AboutHero from "@/components/AboutHero";
 
+export const metadata = {
+  title: "News/Events page",
+};
 
 const News: React.FC = () => {
   const data = [

@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import ClassCategory from "@/components/ClassCategory";
 import Enrollment from "@/components/Enrollment";
 import Facilities from "@/components/Facilities";
@@ -8,7 +8,6 @@ import WelcomeAddress from "@/components/WelcomeAddress";
 
 
 export default function Home() {
- 
   return (
     <>
       <div className="relative">

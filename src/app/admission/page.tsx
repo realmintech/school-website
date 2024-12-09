@@ -3,6 +3,10 @@ import AdmissionDetails from '@/components/AdmissionDetails'
 import Admission from '@/components/AdmissionHero'
 import React from 'react'
 
+export const metadata = {
+  title: "Admission page",
+};
+
 const page = () => {
   return (
     <>

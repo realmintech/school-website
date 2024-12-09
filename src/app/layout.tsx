@@ -4,8 +4,12 @@ import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 
 export const metadata: Metadata = {
-  title: "Al-hikmoh",
-  description: "Knowledge is power.",
+title: {
+  absolute: '',
+  default: 'Al-hikmoh',
+  template: '%s | Al-hikmoh'
+},
+description: 'Knowledge is Power.'
 };
 
 
