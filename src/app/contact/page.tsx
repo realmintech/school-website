@@ -20,12 +20,12 @@ const page: React.FC = () => {
           heading: "custom-heading-class",
         }}
       />
-      <div className="m-10">
-        <div className="my-3">
-          <h1 className="text-4xl font-bold text-center underline my-32">
+      <div className="mx-10">
+        <div className="">
+          <h1 className="text-4xl font-extrabold text-center mt-20 mb-14 text-gray-900">
             GET IN TOUCH
           </h1>
-          <p className="text-center my-20 text-sm tracking-wide leading-snug ">
+          <p className="text-center text-sm tracking-wide leading-snug ">
             Welcome to our Contact page! Get in touch with us effortlessly. Find
             the phone numbers for each school branch and a dedicated email for
             all branches. We're here to assist you promptly and warmly welcome
