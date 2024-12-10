@@ -1,16 +1,20 @@
-import React from 'react'
+import React from 'react';
 
 const AdmissionDetails = () => {
   return (
     <>
       <div>
-        <h1 className="text-center text-4xl font-bold my-36">Welcoming Children To Our School</h1>
-        <div className='grid grid-cols-1 md:grid-cols-2 mx-10 gap-3 my-14'>
+        <h1 className="text-center text-4xl font-extrabold text-gray-900 tracking-tight  mt-0 mb-10 leading-tight">
+          Welcoming Children To Our School
+        </h1>
+        <div className='grid grid-cols-1 md:grid-cols-2 mx-10 gap-8 my-6'>
           <div>
-            <h1 className='text-4xl font-medium'>Al-hikmoh Montessori Academy Registration</h1>
+            <h2 className='text-3xl font-bold text-gray-800 mb-4 leading-snug'>
+              Al-hikmoh Montessori Academy <br/>  Registration
+            </h2>
           </div>
           <div>
-            <p className='text-sm tracking-wide leading-snug'>
+            <p className='text-base text-gray-700 tracking-wide leading-relaxed'>
               To make the admission process more convenient for our families,
               parents can now complete their child's admission form online.
               Please be aware that a registration fee is required to secure an
@@ -25,4 +29,4 @@ const AdmissionDetails = () => {
   );
 }
 
-export default AdmissionDetails
+export default AdmissionDetails;

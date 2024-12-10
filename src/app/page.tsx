@@ -18,7 +18,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="mt-[600px] md:mt-80 lg:mt-20 px-4 md:px-0 mx-auto py-3">
+      <div className="mt-[600px] md:mt-80 mb-24 lg:mt-20 px-4 md:px-0 mx-auto py-3">
         <WelcomeAddress />
       </div>
       <div style={{ border: "40px solid #00712D" }}>

@@ -49,7 +49,7 @@ const ClassCategory = () => {
           data-aos-easing="linear"
           className="border-gray bg-white text-center  rounded-xl shadow-lg py-4 px-5"
         >
-          <p className="text-lemon place-items-center text-4xl">{item.icon}</p>
+          <p className=" flex justify-center items-center text-lemon place-items-center text-4xl">{item.icon}</p>
           <p className="text-lg my-2 font-semibold">{item.title}</p>
           <p className="text-sm">{item.desc}</p>
         </div>
