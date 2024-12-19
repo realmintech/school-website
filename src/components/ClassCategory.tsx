@@ -21,7 +21,7 @@ const ClassCategory = () => {
     {
       title: "Creche",
       icon: <FaBaby />,
-      desc: "Kids class from 1 year to 2 years old.",
+      desc: "Kids class from 7 to 1 years old.",
     },
     {
       title: "Kindergarten",
@@ -31,12 +31,12 @@ const ClassCategory = () => {
     {
       title: "Nursery",
       icon: <GiSchoolBag />,
-      desc: "Kids class from 1 year to 2 years old.",
+      desc: "Kids class from 3 year to 6 years old.",
     },
     {
       title: "Primary",
       icon: <FaUserGraduate />,
-      desc: "Kids class from 1 year to 2 years old.",
+      desc: "Kids class from 6 year to 9 years old.",
     },
   ];
 

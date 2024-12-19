@@ -98,7 +98,7 @@ const page: React.FC = () => {
               ></textarea>
               <button
                 type="submit"
-                className="bg-lemon mt-2 shadow-md rounded-lg text-white  p-3 w-full"
+                className="bg-lemon mt-2 mb-10 shadow-md rounded-lg text-white  p-3 w-full"
               >
                 SUBMIT
               </button>

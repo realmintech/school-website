@@ -74,20 +74,18 @@ const PillsComponent = () => {
         >
           {activeTab === "vision" && (
             <p className="text-sm leading-relaxed tracking-wide">
-              Vision content goes here. Lorem ipsum dolor sit amet, consectetur
-              adipisicing elit.
+              To breed future leaders who lead in a way that is just and pleases Allah
             </p>
           )}
           {activeTab === "mission" && (
             <p className="text-sm leading-relaxed tracking-wide">
-              Mission content goes here. Fuga nam perspiciatis laudantium autem
-              eveniet nesciunt velit!
+             
+              The mission of the school is to have a montessori where academics is lightened up with islamic knowledge
             </p>
           )}
           {activeTab === "value" && (
             <p className="text-sm leading-relaxed tracking-wide">
-              Value content goes here. Lorem ipsum, dolor sit amet consectetur
-              adipisicing elit.
+             Impacting immeasurable value to kids who rule the society.
             </p>
           )}
         </div>
