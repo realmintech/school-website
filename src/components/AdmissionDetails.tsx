@@ -4,7 +4,7 @@ const AdmissionDetails = () => {
   return (
     <>
       <div>
-        <h1 className="text-center text-4xl font-extrabold text-gray-900 tracking-tight  mt-0 mb-10 leading-tight">
+        <h1 className="text-center text-4xl font-extrabold text-gray-900 tracking-tight mb-10 leading-tight">
           Welcoming Children To Our School
         </h1>
         <div className='grid grid-cols-1 md:grid-cols-2 mx-10 gap-8 my-6'>

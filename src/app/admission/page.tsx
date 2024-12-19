@@ -1,6 +1,6 @@
 import AdmissionCard from '@/components/AdmissionCard'
 import AdmissionDetails from '@/components/AdmissionDetails'
-import Admission from '@/components/AdmissionHero'
+import Admission from '@/components/Admission'
 import React from 'react'
 
 export const metadata = {
